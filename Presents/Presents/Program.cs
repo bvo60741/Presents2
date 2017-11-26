@@ -10,7 +10,7 @@ namespace Presents
             User user = new User(
                 "Marco",
                 "Top street, DOM",
-                50000,
+                20000,
                 10000
             );
             Console.WriteLine("Список товаров:");
@@ -225,7 +225,7 @@ namespace Presents
             while (true)
             {
                 Console.WriteLine();
-                Console.WriteLine($"Здравствуй {user.Name} ваш баланс {user.Balance}");
+                Console.WriteLine($"Здравствуй, {user.Name} ваш баланс {user.Balance}");
 
                 for (int i = 0; i < products.Length; i++)
                 {
