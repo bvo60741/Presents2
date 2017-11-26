@@ -221,7 +221,7 @@ namespace Presents
             };
 
             Informer informer = new Informer();
-            ///как надо делать маркетинг!!!!
+            
             while (true)
             {
                 Console.WriteLine();
