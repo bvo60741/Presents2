@@ -13,7 +13,9 @@ namespace Presents
                 20000,
                 10000
             );
+
             Console.WriteLine("Список товаров:");
+            
             //Flowers
             Flowers roseFlowers = new Flowers(
                 "Роза",
@@ -21,12 +23,6 @@ namespace Presents
                 3,
                 "Красный"
             );
-            Console.WriteLine("Цветы");
-            Console.WriteLine("Название: " + roseFlowers.Name);
-            Console.WriteLine("Цена: " + roseFlowers.Price);
-            Console.WriteLine("Количество: " + roseFlowers.Count);
-            Console.WriteLine("Цвет: " + roseFlowers.Color);
-            Console.WriteLine(new String('-', 25));
 
             Flowers tulipsFlowers = new Flowers(
                 "Тюльпаны",
@@ -34,12 +30,6 @@ namespace Presents
                 5,
                 "Желтый"
             );
-            Console.WriteLine("Цветы");
-            Console.WriteLine("Название: " + tulipsFlowers.Name);
-            Console.WriteLine("Цена: " + tulipsFlowers.Price);
-            Console.WriteLine("Количество: " + tulipsFlowers.Count);
-            Console.WriteLine("Цвет: " + tulipsFlowers.Color);
-            Console.WriteLine(new String('-', 25));
 
             Flowers orchidFlowers = new Flowers(
                 "Орхидея",
@@ -47,12 +37,10 @@ namespace Presents
                 1,
                 "Фиолетовый"
             );
-            Console.WriteLine("Цветы");
-            Console.WriteLine("Название: " + orchidFlowers.Name);
-            Console.WriteLine("Цена: " + orchidFlowers.Price);
-            Console.WriteLine("Количество: " + orchidFlowers.Count);
-            Console.WriteLine("Цвет: " + orchidFlowers.Color);
-            Console.WriteLine(new String('-', 25));
+
+            roseFlowers.GetWrite();
+            tulipsFlowers.GetWrite();
+            orchidFlowers.GetWrite();
 
             //Candys
             Candy сhocolateCandy = new Candy(
@@ -61,12 +49,6 @@ namespace Presents
                 2,
                 "Белый шоколад"
             );
-            Console.WriteLine("Конфеты");
-            Console.WriteLine("Название: " + сhocolateCandy.Name);
-            Console.WriteLine("Цена: " + сhocolateCandy.Price);
-            Console.WriteLine("Количество: " + сhocolateCandy.Count);
-            Console.WriteLine("Вкус: " + сhocolateCandy.Taste);
-            Console.WriteLine(new String('-', 25));
 
             Candy lollipopsCandy = new Candy(
                 "Леденцы",
@@ -74,12 +56,6 @@ namespace Presents
                 1,
                 "Мятный"
             );
-            Console.WriteLine("Конфеты");
-            Console.WriteLine("Название: " + lollipopsCandy.Name);
-            Console.WriteLine("Цена: " + lollipopsCandy.Price);
-            Console.WriteLine("Количество: " + lollipopsCandy.Count);
-            Console.WriteLine("Вкус: " + lollipopsCandy.Taste);
-            Console.WriteLine(new String('-', 25));
 
             Candy marmaladeCandy = new Candy(
                 "Мармелад",
@@ -87,12 +63,10 @@ namespace Presents
                 1,
                 "Фруктовое ассорти"
             );
-            Console.WriteLine("Конфеты");
-            Console.WriteLine("Название: " + marmaladeCandy.Name);
-            Console.WriteLine("Цена: " + marmaladeCandy.Price);
-            Console.WriteLine("Количество: " + marmaladeCandy.Count);
-            Console.WriteLine("Вкус: " + marmaladeCandy.Taste);
-            Console.WriteLine(new String('-', 25));
+
+            сhocolateCandy.GetWrite();
+            lollipopsCandy.GetWrite();
+            marmaladeCandy.GetWrite();
 
             //Cosmetic
             Cosmetic pomadeCosmetic = new Cosmetic(
@@ -101,12 +75,6 @@ namespace Presents
                 1,
                 "Помада"
             );
-            Console.WriteLine("Косметика");
-            Console.WriteLine("Название: " + pomadeCosmetic.Name);
-            Console.WriteLine("Цена: " + pomadeCosmetic.Price);
-            Console.WriteLine("Количество: " + pomadeCosmetic.Count);
-            Console.WriteLine("Вид: " + pomadeCosmetic.Type);
-            Console.WriteLine(new String('-', 25));
 
             Cosmetic mascaraCosmetic = new Cosmetic(
                 "Max Factor",
@@ -114,12 +82,6 @@ namespace Presents
                 1,
                 "Тушь для ресниц"
             );
-            Console.WriteLine("Косметика");
-            Console.WriteLine("Название: " + mascaraCosmetic.Name);
-            Console.WriteLine("Цена: " + mascaraCosmetic.Price);
-            Console.WriteLine("Количество: " + mascaraCosmetic.Count);
-            Console.WriteLine("Вид: " + mascaraCosmetic.Type);
-            Console.WriteLine(new String('-', 25));
 
             Cosmetic eyeshadowCosmetic = new Cosmetic(
                 "Essense",
@@ -127,12 +89,10 @@ namespace Presents
                 6,
                 "Тени для век"
             );
-            Console.WriteLine("Косметика");
-            Console.WriteLine("Название: " + eyeshadowCosmetic.Name);
-            Console.WriteLine("Цена: " + eyeshadowCosmetic.Price);
-            Console.WriteLine("Количество: " + eyeshadowCosmetic.Count);
-            Console.WriteLine("Вид: " + eyeshadowCosmetic.Type);
-            Console.WriteLine(new String('-', 25));
+
+            pomadeCosmetic.GetWrite();
+            mascaraCosmetic.GetWrite();
+            eyeshadowCosmetic.GetWrite();
 
             //Clothes
             Clothes tshirtClothes = new Clothes(
@@ -141,12 +101,6 @@ namespace Presents
                 1,
                 "Футболка"
             );
-            Console.WriteLine("Одежда");
-            Console.WriteLine("Название: " + tshirtClothes.Name);
-            Console.WriteLine("Цена: " + tshirtClothes.Price);
-            Console.WriteLine("Количество: " + tshirtClothes.Count);
-            Console.WriteLine("Вид: " + tshirtClothes.Type);
-            Console.WriteLine(new String('-', 25));
 
             Clothes shoesClothes = new Clothes(
                 "Nike Air Max 1",
@@ -154,12 +108,6 @@ namespace Presents
                 1,
                 "Кроссовки"
             );
-            Console.WriteLine("Одежда");
-            Console.WriteLine("Название: " + shoesClothes.Name);
-            Console.WriteLine("Цена: " + shoesClothes.Price);
-            Console.WriteLine("Количество: " + shoesClothes.Count);
-            Console.WriteLine("Вид: " + shoesClothes.Type);
-            Console.WriteLine(new String('-', 25));
 
             Clothes jeansClothes = new Clothes(
                 "gloria Jeans",
@@ -167,12 +115,10 @@ namespace Presents
                 1,
                 "Джинсы"
             );
-            Console.WriteLine("Одежда");
-            Console.WriteLine("Название: " + jeansClothes.Name);
-            Console.WriteLine("Цена: " + jeansClothes.Price);
-            Console.WriteLine("Количество: " + jeansClothes.Count);
-            Console.WriteLine("Вид: " + jeansClothes.Type);
-            Console.WriteLine(new String('-', 25));
+
+            tshirtClothes.GetWrite();
+            shoesClothes.GetWrite();
+            jeansClothes.GetWrite();
 
             //Jewelry
             Jewelry pendantJewelry = new Jewelry(
@@ -180,13 +126,7 @@ namespace Presents
                 2500,
                 1,
                 "Подвеска"
-            );
-            Console.WriteLine("Ювелирное украшение");
-            Console.WriteLine("Название: " + pendantJewelry.Name);
-            Console.WriteLine("Цена: " + pendantJewelry.Price);
-            Console.WriteLine("Количество: " + pendantJewelry.Count);
-            Console.WriteLine("Вид: " + pendantJewelry.Type);
-            Console.WriteLine(new String('-', 25));
+            );           
 
             Jewelry ringJewelry = new Jewelry(
                 "Серебро",
@@ -194,12 +134,6 @@ namespace Presents
                 1,
                 "Колько"
             );
-            Console.WriteLine("Ювелирное украшение");
-            Console.WriteLine("Название: " + ringJewelry.Name);
-            Console.WriteLine("Цена: " + ringJewelry.Price);
-            Console.WriteLine("Количество: " + ringJewelry.Count);
-            Console.WriteLine("Вид: " + ringJewelry.Type);
-            Console.WriteLine(new String('-', 25));
 
             Jewelry earringsJewelry = new Jewelry(
                  "Белое золото",
@@ -207,12 +141,10 @@ namespace Presents
                  2,
                  "Сережки"
              );
-            Console.WriteLine("Ювелирное украшение");
-            Console.WriteLine("Название: " + earringsJewelry.Name);
-            Console.WriteLine("Цена: " + earringsJewelry.Price);
-            Console.WriteLine("Количество: " + earringsJewelry.Count);
-            Console.WriteLine("Вид: " + earringsJewelry.Type);
-            Console.WriteLine(new String('-', 25));
+
+            pendantJewelry.GetWrite();
+            ringJewelry.GetWrite();
+            earringsJewelry.GetWrite();
 
             Product[] products = new Product[]
             {

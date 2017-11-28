@@ -1,4 +1,6 @@
-﻿namespace Presents
+﻿using System;
+
+namespace Presents
 {
     public class Product
     {
@@ -8,16 +10,14 @@
 
         public virtual double GetDiscountPrice(User user)
         {
-            if (user.Spent < 300)
-            {
-                return Price;
-            }
-
-            if (user.Spent < 1000)
-            {
-                return Price * 0.9;
-            }
-            return Price * 0.8;
+            return Price;
+        }
+        public virtual void GetWrite()
+        {
+            Console.WriteLine("Подарок");
+            Console.WriteLine("Название: " + Name);
+            Console.WriteLine("Цена: " + Price);
+            Console.WriteLine("Количество: " + Count);
         }
     }
 }

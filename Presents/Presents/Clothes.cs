@@ -1,4 +1,6 @@
-﻿namespace Presents
+﻿using System;
+
+namespace Presents
 {
     public class Clothes : Product
     {
@@ -10,6 +12,16 @@
             Price = price;
             Count = count;
             Type = type;
+        }
+
+        public override void GetWrite()
+        {
+            Console.WriteLine("Одежда");
+            Console.WriteLine("Название: " + Name);
+            Console.WriteLine("Цена: " + Price);
+            Console.WriteLine("Количество: " + Count);
+            Console.WriteLine("Вид: " + Type);
+            Console.WriteLine(new String('-', 25));
         }
     }
 }
