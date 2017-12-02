@@ -14,6 +14,15 @@ namespace Presents
             Type = type;
         }
 
+        public override double GetDiscountPrice(User user)
+        {
+            if (user.Date == 8)
+            {
+                return Price * 0.75;
+            }
+            return Price;
+        }
+
         public override void GetWrite()
         {
             Console.WriteLine("Косметика");

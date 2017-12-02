@@ -14,6 +14,15 @@ namespace Presents
             Type = type;
         }
 
+        public override double GetDiscountPrice(User user)
+        {
+            if (Name[0] == 'З')
+            {
+                return Price * 0.6;
+            }
+            return Price;
+        }
+
         public override void GetWrite()
         {
             Console.WriteLine("Ювелирное украшение");

@@ -11,7 +11,9 @@ namespace Presents
                 "Marco",
                 "Top street, DOM",
                 20000,
-                10000
+                10000,
+                8,
+                "Thursday"
             );
 
             Console.WriteLine("Список товаров:");

@@ -14,6 +14,16 @@ namespace Presents
             Type = type;
         }
 
+        public override double GetDiscountPrice(User user)
+        {
+            Name = Name.ToLower();
+            if (user.DayOfTheWeek == "Thursday")
+            {
+                return Price * 0.8;
+            }
+            return Price;
+        }
+
         public override void GetWrite()
         {
             Console.WriteLine("Одежда");
