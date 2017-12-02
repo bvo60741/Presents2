@@ -16,9 +16,10 @@ namespace Presents
 
         public override double GetDiscountPrice(User user)
         {
-            if (user.Date == 8)
+            Name = Name.ToLower();
+            if (user.Date == 8 && Name[0] == 'M')
             {
-                return Price * 0.75;
+                return Price * 0.85;
             }
             return Price;
         }

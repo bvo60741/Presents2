@@ -16,10 +16,10 @@ namespace Presents
 
         public override double GetDiscountPrice(User user)
         {
-            Name = Name.ToLower();
-            if (user.DayOfTheWeek == "Thursday")
+            Type = Type.ToLower();
+            if (user.DayOfTheWeek == "Thursday" && Type[0] == 'Ф')
             {
-                return Price * 0.8;
+                return Price * 0.9;
             }
             return Price;
         }
